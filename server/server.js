@@ -711,6 +711,6 @@ app.post('/user/new', (req, res) => {
   }
 });
 
-app.listen(3001, () => {
+app.listen(port, () => {
   console.log(`Server live on ${port}`);
 });
