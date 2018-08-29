@@ -23,6 +23,15 @@ app.use(cors());
 var multer = require('multer');
 var upload = multer();
 
+app.post('/confirm-live', (req, res) => {
+  Pin.find({}).then((pinDocs) => {
+    res.send({status: 200});
+  }).catch((e) => {
+    console.log({e});
+    res.send({e});
+  });
+});
+
 app.post('/profile-photo/remove', (req, res) => {
   var _id = req.body._id;
 
