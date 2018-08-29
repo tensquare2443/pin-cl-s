@@ -12,7 +12,7 @@ var encode = require('base64-arraybuffer').encode;
 var {imgurClientId} = require('./vars');
 
 var app = express();
-var port = 3001;
+var port = process.env.PORT || 3001;
 
 var axios = require('axios');
 
