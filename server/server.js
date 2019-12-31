@@ -2,8 +2,6 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 
-var mongooseTypes = require('mongoose').Types;
-var mongoose = require("./db/mongoose");
 var {User} = require('../server/models/user');
 var {Pin} = require('../server/models/pin');
 var {Topic} = require('../server/models/topic');
